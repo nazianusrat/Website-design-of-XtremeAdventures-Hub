@@ -1,0 +1,826 @@
+/* ================= font links css part start =============*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* ------------------ font links css part end ----------------- */
+
+/* ================== common css part start ================*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul , ol{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+:root{
+    --ibm :"IBM Plex Sans", sans-serif ;
+    --brandcolor : #FF9600 ; 
+    --yellowtail : "Yellowtail", cursive;
+    --inter :  "Inter", sans-serif;
+}
+.common_head h2{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: var(--yellowtail);
+    color: #49C4F5;
+}
+.common_head h3{
+    width: 598px;
+    font-size: 54px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #222222;
+    margin-top: 4px;
+    margin-bottom: 29px;
+}
+.common_head{
+    position: relative;
+}
+.common_head::after{
+    content: '';
+    width: 83px;
+    height: 1px;
+    background: black;
+    position: absolute;
+}
+/* ------------------ common css part end ----------------- */
+/* ================== nav css part start ================*/
+#main_menu{
+    width: 100% ;
+    padding-top: 25px;
+    position: absolute;
+}
+.menu_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_row .logo_col img{
+    width: 225px;
+
+}
+.menu_row .menu_col ul{
+    display: flex;
+    gap: 53px;
+    position: relative;
+}
+.menu_row .menu_col ul li a{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm) ;
+    color: #fff;
+    transition: all linear .3s;
+}
+.menu_row .menu_col ul li a:hover{
+    color: var(--brandcolor);
+}
+.menu_row .menu_button a{
+    padding: 20px 51px 21px;
+    background: var(--brandcolor);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    border-radius: 10px;
+    transition: all linear .3s;
+}
+.menu_row .menu_button a:hover{
+    background: #fff;
+    color: black;
+}
+.menu_row .menu_button a:active{
+    transform: scale(0.9);
+}
+.menu_col ul{
+    position: relative;
+    gap: 8px;
+
+}
+.menu_col ul li .drop{
+    position: absolute;
+    flex-direction: column;
+    background: var(--brandcolor);
+    border-radius: 8px;
+    padding: 25px 25px;
+    margin-top: 20px;
+    transform: translateX(-50%);
+    left: 23%;
+    opacity: 0;
+    align-items: center;
+    
+}
+.menu_col ul li:hover .drop{
+    opacity: 90%;
+}
+.menu_col .drop li a{
+    font-size: 18px;
+    font-weight: 700;
+}
+/* ------------------ nav css part end ----------------- */
+/* ================== banner css part start ================*/
+#banner{
+    background: url('../images/bannerbg.png');
+    padding-top: 300px;
+    padding-bottom:350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+.banner_text h1{
+    width: 819px;
+    font-size: 72px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner_button{
+    display: flex;
+    gap: 57px;
+    justify-content: center;
+    margin-top: 48px;
+
+}
+.banner_button a{
+    padding: 20px 40px;
+    background: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: black;
+    transition: all linear .3s;
+}
+.banner_button a:hover{
+    color: #fff;
+    background: var(--brandcolor);
+}
+/* ------------------ banner css part end ----------------- */
+/* ================== Adventures css part start ================*/
+#adventures{
+    padding-top: 105px;
+    padding-bottom: 100px;
+}
+.adventures_row{
+    display: flex;
+    justify-content: space-between;
+}
+.adventures_row .adventures_text p{
+    width: 597px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #000;
+    margin-bottom: 33px;
+    margin-top: 68px;
+}
+.adventures_text .options{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.adventures_text .options .single_options{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.adventures_text .options .single_options span{
+    width: 30px;
+    height: 30px;
+    background: #C4C4C4;
+    border-radius: 100%;
+    display: inline-block;
+}
+.adventures_text .options .single_options p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    font-family: var(--ibm);
+    margin: 0;
+}
+.adventures_button a{
+    width: 199px;
+    height: 62px;
+    background: var(--brandcolor);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 44px;
+}
+.adventures_photo .adventures_1{
+    width: 299px;
+    margin-right: 50px;
+}
+.adventures_photo .adventures_2{
+    width: 294px;
+}
+.sports_counter{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    gap: 24px;
+}
+.sports_counter h2{
+    font-family: var(--ibm);
+    font-size: 80px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+
+}
+.sports_counter p{
+    font-size: 18px;
+    font-family: var(--ibm);
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+.single_counter{
+     width: 312px;
+     height: 150px;
+     background: #FFF4E5;
+}
+.double_counter{
+     width: 312px;
+     height: 150px;
+     background: #E7FDE9;
+}
+.triple_counter{
+     width:312px ;
+     height: 150px;
+     background:#F2F2FD ;
+}
+.quadra_counter{
+     width: 312px;
+     height: 150px;
+     background: #FFF4E5;
+}
+/* ------------------ Adventures css part end ----------------- */
+/* ================== sports css part start ================*/
+#sports{
+    padding-top: 110px;
+    background: #0C3543;
+}
+.sports_head{
+    display: flex;
+    justify-content: space-between;
+}
+.sports_head .common_head h2{
+    color: var(--brandcolor);
+}
+.sports_head .common_head h3{
+    color: #fff;
+}
+.sports_head .sports_head_text p{
+    width: 622px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #fff;
+}
+.sports_head .common_head::after{
+    height: 3px;
+    background: #C4C4C4;
+}
+.sports_cards_row{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 50px;
+    margin-top: 99px;
+}
+.sports_cards_row .sports_single_cards{
+    width: 424px;
+    border-radius: 15px;
+}
+.sports_single_cards .sports_text{
+    padding-top: 37px;
+    padding-bottom: 40px;
+    background: #0F4152;
+}
+.sports_single_cards .sports_text h2{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--inter) ;
+    color: #fff;
+    text-align: center;
+    transition: all linear.4s;
+}
+.sports_single_cards .sports_text:hover h2{
+    color: var(--brandcolor);
+}
+.sports_single_cards .sports_text p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--inter) ;
+    text-align: center;
+    color: #fff;
+    margin-top: 15px;
+}
+.sports_card_image{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+.sports_card_image img{
+    transition: all linear .3s;
+}
+.sports_card_image:hover img{
+    transform: scale(1.1);
+}
+.sports_bg_image{
+    margin-top: 117px;
+}
+/* ------------------ sports css part end ----------------- */
+/* ================== sports_video css part start ================*/
+#sports_video{
+    padding-top: 30px;
+    padding-bottom: 495px;
+    background: var(--brandcolor);
+}
+#sports_video .sports_video_container{
+    position: relative;
+}
+.sports_video_logo{
+    text-align: center;
+}
+.sports_video_logo img{
+    width: 103px;
+}
+.sports_video_head h2{
+    font-size: 54px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 50px;
+}
+.sports_video_head p{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    text-align: center;
+}
+.sports_video_buttons{
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    margin-top: 56px;
+}
+.sports_video_buttons a{
+    transition: all linear .3s;
+}
+.sports_video_buttons a:hover{
+    color: #fff;
+    background: #0C3543;
+    transform: scale(1.1);
+}
+.sports_video_buttons a{
+    padding: 23px 43px ;
+    border-radius: 10px;
+    background: #0C3543;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+}
+.sports_video_buttons_row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    bottom: -548px;
+}
+.sports_video_buttons_row .sports_video_cards{
+    width: 395px;
+    height: 447px;
+    border-radius: 15px;
+    background: url('../images/video_image1.png');
+    padding-left: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.sports_video_cards h2{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+}
+.sports_video_cards h3{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    margin-top: 27px;
+    margin-bottom: 38px;
+}
+.sports_video_cards span{
+    width: 260px;
+    height: 3px;
+    background: #C4C4C4;
+    display: inline-block;
+}
+.sports_video_cards p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #A0A0A0;
+    margin-top: 28px;
+    margin-bottom: 23px;
+}
+.sports_video_buttons_row .sports_video_cards_1{
+    width: 395px;
+    height: 447px;
+    border-radius: 15px;
+    background: url('../images/video_image2.png');
+    padding-left: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.sports_video_cards_1 h2{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+}
+.sports_video_cards_1 h3{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    margin-top: 27px;
+    margin-bottom: 38px;
+}
+.sports_video_cards_1 span{
+    width: 260px;
+    height: 3px;
+    background: #C4C4C4;
+    display: inline-block;
+}
+.sports_video_cards_1 p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #A0A0A0;
+    margin-top: 28px;
+    margin-bottom: 23px;
+}
+.sports_video_buttons_row .sports_video_cards_2{
+    width: 395px;
+    height: 447px;
+    border-radius: 15px;
+    background: url('../images/video_image3.png');
+    padding-left: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.sports_video_cards_2 h2{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+}
+.sports_video_cards_2 h3{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    margin-top: 27px;
+    margin-bottom: 38px;
+}
+.sports_video_cards_2 span{
+    width: 260px;
+    height: 3px;
+    background: #C4C4C4;
+    display: inline-block;
+}
+.sports_video_cards_2 p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #A0A0A0;
+    margin-top: 28px;
+    margin-bottom: 23px;
+}
+/* ------------------ sports_video css part end ----------------- */
+/* ================== logo css part start ================*/
+.logo_head{
+    text-align: center;
+    align-items: center;
+}
+.logo_head h2{
+    margin-top: 191px;
+    margin-bottom: 29px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: var(--yellowtail);
+    color: #14B9F1;
+}
+.logo_head h3{
+    margin-bottom: 29px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #000;
+}
+.logo_head span{
+    height: 2px;
+    width: 100px;
+    background: #A0A0A0;
+    display: inline-block;
+}
+.logo_row{
+    display: flex;
+    justify-content: space-between;
+}
+.main_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 230px;
+}
+.main_logo .logo_image img{
+    width: 150px;
+    height: 150px;
+}
+.main_logo .logo_text h2{
+    font-size:24px ;
+    font-family: var(--ibm);
+    font-weight: 700;
+    width: 250px;
+    text-align: center;
+    color: #000;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.main_logo .logo_text p{
+    font-size: 18px;
+    font-family: var(--ibm);
+    font-weight: 400;
+    width: 275px;
+    text-align: center;
+    color: #000;
+}
+
+/* ------------------ logo css part end ----------------- */
+/* ================== news css part start ================*/
+#news {
+    padding-top: 30px;
+}
+
+.news_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news_head  .common_head h2{
+    color: #FF9600;
+
+}
+
+.news_head  .common_head h3{
+    width: 407px;
+}
+
+.news_head .news_text p{
+    width: 619px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #000;
+}
+
+/* New Image */
+
+.news_row{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 50px;
+    margin-top: 99px;
+}
+.news_row .news_cards{
+    width: 424px;
+    border-radius: 15px;
+}
+.news_cards .sports_text{
+    padding-top: 37px;
+    padding-bottom: 40px;
+    background: #ffffff;
+}
+.news_cards .sports_text h2{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--inter) ;
+    color: #032f1d;
+    text-align: center;
+    transition: all linear.3s;
+}
+.news_cards .sports_text:hover h2{
+    color: var(--brandcolor);
+}
+.news_cards .sports_text p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--inter) ;
+    text-align: center;
+    color: #032f1d;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.news_image{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+.news_image img{
+    transition: all linear .3s;
+}
+.news_image:hover img{
+    transform: scale(1.1);
+}
+
+.news_cards span{
+    height: 2px;
+    width: 424px;
+    background: #A0A0A0;
+    display: inline-block;
+}
+
+.news_cards a{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: rgba(20, 185, 241, 1);
+    transition: all linear .3s;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 424px;
+    height: 18px;
+}
+
+.news_cards a:hover{
+    color: #FF9600;
+    text-align: center;
+}
+
+/* ------------------ news css part end ----------------- */
+/* ================== Footer part start ================*/
+#footer{
+    background-color: #0C3543;
+    margin-top: 42px;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    position:relative;
+    overflow: hidden;
+   
+}
+
+.footer_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* gap: 20px; */
+
+}
+.footer_image img{
+    width: 800px;
+    height: 800px;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: end;
+}
+
+
+.footer_all_text{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 40px;
+}
+/* 
+.footer_club .button {
+    display: flex;
+} */
+
+.footer_all_text .footer_club{
+    display: flex;
+    gap: 33px;
+    margin-top: 40px;
+}
+
+.footer_content span{
+    width: 536px;
+    height: 2px;
+    background: #b2b2b2;
+    display:inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: end;
+
+
+}
+
+.footer_all_text .footer_logo img{
+    width: 252px
+    
+}
+
+.footer_all_text .footer_club a{
+    padding: 10px 10px 10px 10px;
+    height: 65px;
+    background: #FF9600;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer_all_text .footer_club p{
+    width: 373px;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: var(--ibm);
+    color: #ffffff;
+    margin-top: 10px;
+    
+}
+
+/* contact */
+
+.footer_contact{
+    display: flex;
+    gap: 32px;
+}
+
+.footer_contact .footer_contact_head h2{
+   
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #ffffff;
+    
+}
+
+
+.footer_contact .footer_contact_info p{
+   
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #ffffff;
+    
+}
+
+.footer_contact .footer_contact_info a{
+    font-size: 18px;
+    font-family: var(--ibm);
+    font-weight: 300;
+    color: #fff;
+}
+
+.footer_contact_info .contact1{
+    margin: 32px 0;
+}
+
+
+
+
+/* ------------------ common css part end ----------------- */
